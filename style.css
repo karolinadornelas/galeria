@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+header{
+    background-color: #95c977;
+    padding: 16px 0;
+    display: flex;
+    justify-content: center;
+    border-bottom: 16px solid #264b0c;
+}
+
+header button{
+    margin-left: 16px;
+}
+
+form{
+    background-color: rgb(207, 219, 184);
+    padding: 24px 0;
+    text-align: center;
+    display: none;
+}
+
+form h2{
+    margin-bottom: 16px;
+}
+
+input, button{
+    padding: 8px;
+}
+
+#cancel-button{
+    background-color: rgb(161, 22, 22);
+    color: white;
+}
+
+button{
+    background-color: rgb(183, 206, 184);
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul li{
+    max-width: 25%;
+    list-style: none;
+    position: relative;
+    max-height: 500px;
+    overflow-y: hidden;
+}
+
+ul li img{
+    width: 100%;
+}
+
+.overlay-img-link{
+    padding: 16px;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: all ease .5s;
+}
+
+.overlay-img-link a{
+    color: #fff;
+    text-decoration: none;
+}
+
+ul li:hover .overlay-img-link{
+    opacity: 1;
